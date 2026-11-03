@@ -1,0 +1,2378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0B1022">
+  <meta name="description" content="Explore dental, dermatology, aesthetic, hair and wellness care at Amir Beladi Polyclinic on Al Wasl Road, Dubai. Contact the clinic to arrange a consultation.">
+  <meta name="robots" content="index, follow">
+  <title>Amir Beladi Polyclinic | Dental & Aesthetic Care in Dubai</title>
+  <link rel="canonical" href="https://amirbeladipolyclinic.com/">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --color-primary: #0B1022;
+      --color-primary-dark: #060A16;
+      --color-primary-light: #30394D;
+
+      --color-secondary: #E9E2D2;
+      --color-secondary-dark: #D3C7B1;
+      --color-secondary-light: #F5F1E9;
+
+      --color-accent: #C3A879;
+
+      --color-heading: #111827;
+      --color-text: #4B5563;
+      --color-text-muted: #818995;
+
+      --color-background: #FFFFFF;
+      --color-background-alt: #F7F7F4;
+
+      --color-surface: #FFFFFF;
+      --color-surface-alt: #F0F1EF;
+
+      --color-border: #E5E7EB;
+      --color-border-strong: #C8CDD3;
+
+      --color-interactive: #0B1022;
+      --color-interactive-hover: #30394D;
+      --color-focus: #B18B52;
+
+      --font-display: "Cormorant Garamond", Georgia, serif;
+      --font-body: "Manrope", Arial, sans-serif;
+
+      --container: 1240px;
+      --page-gutter: clamp(22px, 5vw, 76px);
+      --section-space: clamp(82px, 10vw, 142px);
+      --radius-large: 30px;
+      --radius-medium: 18px;
+      --shadow-soft: 0 20px 60px rgba(11, 16, 34, .08);
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 100px;
+    }
+
+    body {
+      margin: 0;
+      background: var(--color-background);
+      color: var(--color-text);
+      font-family: var(--font-body);
+      font-size: 16px;
+      line-height: 1.75;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    body.menu-open {
+      overflow: hidden;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button {
+      font: inherit;
+    }
+
+    button,
+    a {
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    a:focus-visible,
+    button:focus-visible,
+    summary:focus-visible {
+      outline: 3px solid var(--color-focus);
+      outline-offset: 4px;
+    }
+
+    ::selection {
+      background: var(--color-secondary);
+      color: var(--color-primary);
+    }
+
+    .container {
+      width: min(100% - (var(--page-gutter) * 2), var(--container));
+      margin-inline: auto;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 11px;
+      margin: 0 0 20px;
+      color: var(--color-primary-light);
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: .2em;
+      line-height: 1.4;
+      text-transform: uppercase;
+    }
+
+    .eyebrow::before {
+      width: 27px;
+      height: 1px;
+      background: var(--color-accent);
+      content: "";
+    }
+
+    .section-heading {
+      max-width: 760px;
+      margin-bottom: 54px;
+    }
+
+    .section-heading h2 {
+      margin: 0;
+      color: var(--color-heading);
+      font-family: var(--font-display);
+      font-size: clamp(43px, 5.6vw, 70px);
+      font-weight: 500;
+      letter-spacing: -.035em;
+      line-height: .99;
+    }
+
+    .section-heading p {
+      max-width: 610px;
+      margin: 22px 0 0;
+      color: var(--color-text);
+      font-size: 15px;
+      line-height: 1.9;
+    }
+
+    .button {
+      display: inline-flex;
+      min-height: 54px;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      padding: 14px 23px;
+      border: 1px solid transparent;
+      border-radius: 3px;
+      cursor: pointer;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: .09em;
+      line-height: 1.3;
+      text-align: center;
+      text-transform: uppercase;
+      transition: background .25s ease, color .25s ease, border-color .25s ease, transform .25s ease;
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
+    }
+
+    .button-primary {
+      background: var(--color-primary);
+      color: #FFFFFF;
+    }
+
+    .button-primary:hover {
+      background: var(--color-primary-light);
+    }
+
+    .button-light {
+      border-color: rgba(255,255,255,.5);
+      background: transparent;
+      color: #FFFFFF;
+    }
+
+    .button-light:hover {
+      border-color: #FFFFFF;
+      background: #FFFFFF;
+      color: var(--color-primary);
+    }
+
+    .button-outline {
+      border-color: var(--color-border-strong);
+      background: transparent;
+      color: var(--color-primary);
+    }
+
+    .button-outline:hover {
+      border-color: var(--color-primary);
+      background: var(--color-primary);
+      color: #FFFFFF;
+    }
+
+    .button-arrow {
+      font-size: 17px;
+      line-height: 1;
+    }
+
+    /* Announcement strip and navigation */
+
+    .topline {
+      min-height: 38px;
+      background: var(--color-primary);
+      color: rgba(255,255,255,.85);
+      font-size: 10px;
+      letter-spacing: .08em;
+    }
+
+    .topline-inner {
+      display: flex;
+      min-height: 38px;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+    }
+
+    .topline a {
+      color: var(--color-secondary);
+    }
+
+    .site-header {
+      position: relative;
+      z-index: 50;
+      background: rgba(255,255,255,.97);
+      border-bottom: 1px solid rgba(11,16,34,.08);
+    }
+
+    .nav-wrap {
+      display: flex;
+      min-height: 88px;
+      align-items: center;
+      justify-content: space-between;
+      gap: 28px;
+    }
+
+    .brand {
+      display: inline-flex;
+      min-width: 190px;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .brand-mark {
+      display: grid;
+      width: 47px;
+      height: 47px;
+      flex: 0 0 47px;
+      place-items: center;
+      border: 1px solid var(--color-secondary-dark);
+      border-radius: 50%;
+      background: var(--color-primary);
+      color: var(--color-secondary);
+      font-family: var(--font-display);
+      font-size: 23px;
+      font-weight: 600;
+      line-height: 1;
+    }
+
+    .brand-copy {
+      display: flex;
+      flex-direction: column;
+      color: var(--color-primary);
+      line-height: 1.15;
+    }
+
+    .brand-copy strong {
+      font-family: var(--font-display);
+      font-size: 20px;
+      font-weight: 600;
+      letter-spacing: -.02em;
+    }
+
+    .brand-copy span {
+      margin-top: 4px;
+      color: var(--color-text-muted);
+      font-size: 8px;
+      font-weight: 800;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+    }
+
+    .main-nav {
+      display: flex;
+      align-items: center;
+      gap: clamp(17px, 2.5vw, 34px);
+    }
+
+    .main-nav a {
+      color: var(--color-primary);
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: .06em;
+      transition: color .2s ease;
+    }
+
+    .main-nav a:hover {
+      color: #9A7948;
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .nav-actions .button {
+      min-height: 45px;
+      padding: 12px 17px;
+      font-size: 9px;
+    }
+
+    .menu-toggle {
+      display: none;
+      width: 46px;
+      height: 46px;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid var(--color-border);
+      background: #FFFFFF;
+      color: var(--color-primary);
+      cursor: pointer;
+    }
+
+    .menu-toggle span,
+    .menu-toggle span::before,
+    .menu-toggle span::after {
+      display: block;
+      width: 19px;
+      height: 1.5px;
+      background: currentColor;
+      transition: transform .2s ease;
+    }
+
+    .menu-toggle span {
+      position: relative;
+    }
+
+    .menu-toggle span::before,
+    .menu-toggle span::after {
+      position: absolute;
+      left: 0;
+      content: "";
+    }
+
+    .menu-toggle span::before {
+      transform: translateY(-6px);
+    }
+
+    .menu-toggle span::after {
+      transform: translateY(6px);
+    }
+
+    .menu-toggle[aria-expanded="true"] span {
+      background: transparent;
+    }
+
+    .menu-toggle[aria-expanded="true"] span::before {
+      transform: rotate(45deg);
+    }
+
+    .menu-toggle[aria-expanded="true"] span::after {
+      transform: rotate(-45deg);
+    }
+
+    /* Hero */
+
+    .hero {
+      position: relative;
+      min-height: 690px;
+      overflow: hidden;
+      background: var(--color-primary);
+      color: #FFFFFF;
+    }
+
+    .hero::before {
+      position: absolute;
+      top: -210px;
+      right: -160px;
+      width: 660px;
+      height: 660px;
+      border: 1px solid rgba(233,226,210,.16);
+      border-radius: 50%;
+      content: "";
+    }
+
+    .hero::after {
+      position: absolute;
+      top: -105px;
+      right: -55px;
+      width: 450px;
+      height: 450px;
+      border: 1px solid rgba(233,226,210,.12);
+      border-radius: 50%;
+      content: "";
+    }
+
+    .hero-inner {
+      position: relative;
+      z-index: 2;
+      display: grid;
+      min-height: 690px;
+      grid-template-columns: 1.02fr .98fr;
+      align-items: center;
+      gap: clamp(35px, 6vw, 90px);
+      padding-block: 72px;
+    }
+
+    .hero-copy {
+      position: relative;
+      z-index: 3;
+      max-width: 610px;
+      padding-block: 20px;
+    }
+
+    .hero .eyebrow {
+      color: var(--color-secondary);
+    }
+
+    .hero h1 {
+      max-width: 650px;
+      margin: 0;
+      color: #FFFFFF;
+      font-family: var(--font-display);
+      font-size: clamp(57px, 7vw, 91px);
+      font-weight: 400;
+      letter-spacing: -.045em;
+      line-height: .91;
+    }
+
+    .hero h1 em {
+      color: var(--color-secondary);
+      font-weight: 400;
+    }
+
+    .hero-description {
+      max-width: 490px;
+      margin: 29px 0 0;
+      color: rgba(255,255,255,.74);
+      font-size: 14px;
+      line-height: 1.95;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 34px;
+    }
+
+    .hero-note {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-top: 38px;
+      color: rgba(255,255,255,.62);
+      font-size: 10px;
+      letter-spacing: .05em;
+    }
+
+    .hero-note::before {
+      width: 32px;
+      height: 1px;
+      background: var(--color-accent);
+      content: "";
+    }
+
+    .hero-visual {
+      position: relative;
+      min-height: 515px;
+      isolation: isolate;
+    }
+
+    .hero-photo {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 88%;
+      height: 475px;
+      overflow: hidden;
+      border-radius: 48% 48% 4px 4px;
+      background: #D8D3C8;
+    }
+
+    .hero-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      filter: saturate(.72);
+    }
+
+    .hero-photo::after {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(11,16,34,.02), rgba(11,16,34,.2));
+      content: "";
+    }
+
+    .hero-stamp {
+      position: absolute;
+      right: -3px;
+      bottom: 8px;
+      display: grid;
+      width: 150px;
+      height: 150px;
+      place-items: center;
+      border: 1px solid rgba(233,226,210,.45);
+      border-radius: 50%;
+      background: var(--color-secondary);
+      color: var(--color-primary);
+      text-align: center;
+      transform: rotate(8deg);
+    }
+
+    .hero-stamp span {
+      max-width: 100px;
+      font-family: var(--font-display);
+      font-size: 22px;
+      font-weight: 600;
+      line-height: 1.05;
+    }
+
+    .hero-caption {
+      position: absolute;
+      bottom: 17px;
+      left: 0;
+      max-width: 190px;
+      padding: 14px 17px;
+      border-left: 2px solid var(--color-accent);
+      background: rgba(6,10,22,.82);
+      color: rgba(255,255,255,.8);
+      font-size: 9px;
+      letter-spacing: .1em;
+      line-height: 1.6;
+      text-transform: uppercase;
+    }
+
+    .hero-caption strong {
+      display: block;
+      color: #FFFFFF;
+      font-size: 11px;
+      letter-spacing: .08em;
+    }
+
+    /* Intro strip */
+
+    .intro-strip {
+      position: relative;
+      z-index: 3;
+      background: var(--color-secondary-light);
+    }
+
+    .intro-strip-inner {
+      display: flex;
+      min-height: 94px;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      padding-block: 20px;
+    }
+
+    .intro-strip p {
+      max-width: 650px;
+      margin: 0;
+      color: var(--color-primary);
+      font-family: var(--font-display);
+      font-size: clamp(20px, 2.3vw, 28px);
+      line-height: 1.2;
+    }
+
+    .intro-strip a {
+      display: inline-flex;
+      align-items: center;
+      gap: 13px;
+      color: var(--color-primary);
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: .09em;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    /* Specialty discovery */
+
+    .specialties {
+      padding-block: var(--section-space);
+      background: var(--color-background);
+    }
+
+    .specialty-intro {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    .specialty-intro .section-heading {
+      margin-bottom: 0;
+    }
+
+    .specialty-intro > p {
+      max-width: 290px;
+      margin: 0 0 7px;
+      color: var(--color-text-muted);
+      font-size: 12px;
+      line-height: 1.8;
+    }
+
+    .specialty-list {
+      margin-top: 65px;
+      border-top: 1px solid var(--color-border-strong);
+    }
+
+    .specialty-row {
+      display: grid;
+      min-height: 150px;
+      grid-template-columns: 78px minmax(190px, .82fr) 1.1fr auto;
+      align-items: center;
+      gap: 28px;
+      padding: 25px 0;
+      border-bottom: 1px solid var(--color-border);
+      transition: padding .25s ease;
+    }
+
+    .specialty-row:hover {
+      padding-inline: 10px;
+    }
+
+    .specialty-number {
+      color: var(--color-accent);
+      font-family: var(--font-display);
+      font-size: 30px;
+      line-height: 1;
+    }
+
+    .specialty-title h3 {
+      margin: 0;
+      color: var(--color-primary);
+      font-family: var(--font-display);
+      font-size: clamp(27px, 3vw, 38px);
+      font-weight: 500;
+      line-height: 1.05;
+    }
+
+    .specialty-title span {
+      display: block;
+      margin-top: 8px;
+      color: var(--color-text-muted);
+      font-size: 9px;
+      font-weight: 800;
+      letter-spacing: .13em;
+      text-transform: uppercase;
+    }
+
+    .specialty-description {
+      max-width: 410px;
+      margin: 0;
+      color: var(--color-text);
+      font-size: 12px;
+      line-height: 1.85;
+    }
+
+    .specialty-link {
+      display: grid;
+      width: 46px;
+      height: 46px;
+      place-items: center;
+      border: 1px solid var(--color-border-strong);
+      border-radius: 50%;
+      color: var(--color-primary);
+      font-size: 20px;
+      transition: background .2s ease, color .2s ease, border-color .2s ease;
+    }
+
+    .specialty-row:hover .specialty-link {
+      border-color: var(--color-primary);
+      background: var(--color-primary);
+      color: #FFFFFF;
+    }
+
+    /* Six custom icons in exactly two rows of three */
+
+    .care-icons {
+      padding-block: 75px 86px;
+      background: var(--color-background-alt);
+    }
+
+    .care-icons-header {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 25px;
+      margin-bottom: 35px;
+    }
+
+    .care-icons-header h2 {
+      max-width: 550px;
+      margin: 0;
+      color: var(--color-primary);
+      font-family: var(--font-display);
+      font-size: clamp(34px, 4vw, 48px);
+      font-weight: 500;
+      line-height: 1;
+    }
+
+    .care-icons-header p {
+      max-width: 300px;
+      margin: 0;
+      color: var(--color-text-muted);
+      font-size: 11px;
+      line-height: 1.8;
+    }
+
+    .icon-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      border-top: 1px solid var(--color-border-strong);
+      border-left: 1px solid var(--color-border-strong);
+    }
+
+    .icon-item {
+      display: flex;
+      min-height: 190px;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 25px 27px;
+      border-right: 1px solid var(--color-border-strong);
+      border-bottom: 1px solid var(--color-border-strong);
+    }
+
+    .icon-art {
+      display: grid;
+      width: 55px;
+      height: 55px;
+      place-items: center;
+      border-radius: 50%;
+      background: var(--color-secondary-light);
+      color: var(--color-primary);
+    }
+
+    .icon-art svg {
+      width: 29px;
+      height: 29px;
+      fill: none;
+      stroke: currentColor;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-width: 1.45;
+    }
+
+    .icon-item h3 {
+      margin: 24px 0 0;
+      color: var(--color-primary);
+      font-family: var(--font-display);
+      font-size: 25px;
+      font-weight: 600;
+      line-height: 1.1;
+    }
+
+    .icon-item p {
+      margin: 8px 0 0;
+      color: var(--color-text-muted);
+      font-size: 10px;
+      line-height: 1.7;
+    }
+
+    /* Consultation-first feature */
+
+    .consultation {
+      position: relative;
+      overflow: hidden;
+      padding-block: var(--section-space);
+      background: var(--color-primary);
+      color: #FFFFFF;
+    }
+
+    .consultation::before {
+      position: absolute;
+      right: -210px;
+      bottom: -310px;
+      width: 650px;
+      height: 650px;
+      border: 1px solid rgba(233,226,210,.15);
+      border-radius: 50%;
+      content: "";
+    }
+
+    .consultation-inner {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: .9fr 1.1fr;
+      gap: clamp(45px, 8vw, 115px);
+      align-items: start;
+    }
+
+    .consultation-copy .eyebrow {
+      color: var(--color-secondary);
+    }
+
+    .consultation-copy h2 {
+      max-width: 480px;
+      margin: 0;
+      color: #FFFFFF;
+      font-family: var(--font-display);
+      font-size: clamp(45px, 5.4vw, 68px);
+      font-weight: 400;
+      letter-spacing: -.03em;
+      line-height: .98;
+    }
+
+    .consultation-copy p {
+      max-width: 430px;
+      margin: 23px 0 0;
+      color: rgba(255,255,255,.69);
+      font-size: 13px;
+      line-height: 1.95;
+    }
+
+    .consultation-copy .button {
+      margin-top: 30px;
+    }
+
+    .journey {
+      border-top: 1px solid rgba(255,255,255,.23);
+    }
+
+    .journey-step {
+      display: grid;
+      grid-template-columns: 52px 1fr;
+      gap: 20px;
+      padding: 24px 0;
+      border-bottom: 1px solid rgba(255,255,255,.19);
+    }
+
+    .journey-step > span {
+      color: var(--color-accent);
+      font-family: var(--font-display);
+      font-size: 27px;
+      line-height: 1.2;
+    }
+
+    .journey-step h3 {
+      margin: 0;
+      color: #FFFFFF;
+      font-family: var(--font-display);
+      font-size: 25px;
+      font-weight: 500;
+      line-height: 1.1;
+    }
+
+    .journey-step p {
+      max-width: 420px;
+      margin: 8px 0 0;
+      color: rgba(255,255,255,.65);
+      font-size: 11px;
+      line-height: 1.8;
+    }
+
+    /* Clinic and team */
+
+    .clinic-story {
+      padding-block: var(--section-space);
+      background: var(--color-secondary-light);
+    }
+
+    .story-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: clamp(42px, 7vw, 95px);
+    }
+
+    .story-visual {
+      position: relative;
+      min-height: 520px;
+    }
+
+    .story-visual img {
+      width: 85%;
+      height: 490px;
+      object-fit: cover;
+      object-position: center;
+      filter: saturate(.7);
+    }
+
+    .story-visual-note {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 210px;
+      padding: 25px;
+      background: var(--color-primary);
+      color: #FFFFFF;
+    }
+
+    .story-visual-note strong {
+      display: block;
+      color: var(--color-secondary);
+      font-family: var(--font-display);
+      font-size: 37px;
+      font-weight: 500;
+      line-height: 1;
+    }
+
+    .story-visual-note span {
+      display: block;
+      margin-top: 9px;
+      color: rgba(255,255,255,.7);
+      font-size: 9px;
+      letter-spacing: .08em;
+      line-height: 1.7;
+      text-transform: uppercase;
+    }
+
+    .story-copy h2 {
+      margin: 0;
+      color: var(--color-primary);
+      font-family: var(--font-display);
+      font-size: clamp(45px, 5.2vw, 66px);
+      font-weight: 500;
+      letter-spacing: -.035em;
+      line-height: .98;
+    }
+
+    .story-copy > p {
+      margin: 23px 0 0;
+      color: var(--color-text);
+      font-size: 13px;
+      line-height: 1.95;
+    }
+
+    .story-points {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 17px 25px;
+      margin-top: 30px;
+    }
+
+    .story-point {
+      padding-top: 13px;
+      border-top: 1px solid var(--color-secondary-dark);
+    }
+
+    .story-point strong {
+      display: block;
+      color: var(--color-primary);
+      font-family: var(--font-display);
+      font-size: 21px;
+      font-weight: 600;
+      line-height: 1.15;
+    }
+
+    .story-point span {
+      display: block;
+      margin-top: 6px;
+      color: var(--color-text-muted);
+      font-size: 10px;
+      line-height: 1.7;
+    }
+
+    .story-copy .button {
+      margin-top: 32px;
+    }
+
+    .team {
+      padding-block: var(--section-space);
+      background: var(--color-background);
+    }
+
+    .team-heading {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    .team-heading .section-heading {
+      margin-bottom: 0;
+    }
+
+    .team-heading > p {
+      max-width: 280px;
+      margin: 0 0 7px;
+      color: var(--color-text-muted);
+      font-size: 11px;
+      line-height: 1.8;
+    }
+
+    .team-list {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0 42px;
+      margin-top: 58px;
+      border-top: 1px solid var(--color-border-strong);
+    }
+
+    .team-member {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 25px 0;
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .team-member h3 {
+      margin: 0;
+      color: var(--color-primary);
+      font-family: var(--font-display);
+      font-size: 27px;
+      font-weight: 600;
+      line-height: 1.1;
+    }
+
+    .team-member p {
+      margin: 7px 0 0;
+      color: var(--color-text-muted);
+      font-size: 10px;
+      line-height: 1.7;
+    }
+
+    .team-member a {
+      flex: 0 0 auto;
+      color: var(--color-primary);
+      font-size: 20px;
+    }
+
+    /* FAQs */
+
+    .faq {
+      padding-block: var(--section-space);
+      background: var(--color-background-alt);
+    }
+
+    .faq-layout {
+      display: grid;
+      grid-template-columns: .72fr 1.28fr;
+      gap: clamp(40px, 8vw, 110px);
+    }
+
+    .faq-intro h2 {
+      margin: 0;
+      color: var(--color-primary);
+      font-family: var(--font-display);
+      font-size: clamp(43px, 5vw, 62px);
+      font-weight: 500;
+      letter-spacing: -.035em;
+      line-height: .98;
+    }
+
+    .faq-intro p {
+      max-width: 320px;
+      margin: 20px 0 0;
+      color: var(--color-text-muted);
+      font-size: 12px;
+      line-height: 1.9;
+    }
+
+    .faq-list {
+      border-top: 1px solid var(--color-border-strong);
+    }
+
+    .faq-list details {
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .faq-list summary {
+      position: relative;
+      padding: 22px 38px 22px 0;
+      color: var(--color-primary);
+      cursor: pointer;
+      font-family: var(--font-display);
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 1.25;
+      list-style: none;
+    }
+
+    .faq-list summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .faq-list summary::after {
+      position: absolute;
+      top: 22px;
+      right: 3px;
+      color: var(--color-accent);
+      content: "+";
+      font-family: var(--font-body);
+      font-size: 20px;
+      font-weight: 400;
+    }
+
+    .faq-list details[open] summary::after {
+      content: "−";
+    }
+
+    .faq-list details p {
+      max-width: 620px;
+      margin: -3px 0 23px;
+      color: var(--color-text);
+      font-size: 12px;
+      line-height: 1.9;
+    }
+
+    /* Contact */
+
+    .contact {
+      position: relative;
+      overflow: hidden;
+      padding-block: var(--section-space);
+      background: var(--color-primary);
+      color: #FFFFFF;
+    }
+
+    .contact::after {
+      position: absolute;
+      top: -250px;
+      right: -210px;
+      width: 650px;
+      height: 650px;
+      border: 1px solid rgba(233,226,210,.14);
+      border-radius: 50%;
+      content: "";
+    }
+
+    .contact-inner {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: 1fr .8fr;
+      gap: 70px;
+      align-items: start;
+    }
+
+    .contact-copy .eyebrow {
+      color: var(--color-secondary);
+    }
+
+    .contact-copy h2 {
+      max-width: 620px;
+      margin: 0;
+      color: #FFFFFF;
+      font-family: var(--font-display);
+      font-size: clamp(51px, 6.5vw, 82px);
+      font-weight: 400;
+      letter-spacing: -.04em;
+      line-height: .92;
+    }
+
+    .contact-copy p {
+      max-width: 470px;
+      margin: 24px 0 0;
+      color: rgba(255,255,255,.68);
+      font-size: 13px;
+      line-height: 1.9;
+    }
+
+    .contact-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 32px;
+    }
+
+    .contact-details {
+      padding-top: 8px;
+    }
+
+    .contact-detail {
+      padding: 20px 0;
+      border-top: 1px solid rgba(255,255,255,.2);
+    }
+
+    .contact-detail:last-child {
+      border-bottom: 1px solid rgba(255,255,255,.2);
+    }
+
+    .contact-detail span {
+      display: block;
+      margin-bottom: 7px;
+      color: var(--color-secondary);
+      font-size: 9px;
+      font-weight: 800;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+    }
+
+    .contact-detail strong,
+    .contact-detail a {
+      color: #FFFFFF;
+      font-size: 13px;
+      font-weight: 600;
+      line-height: 1.8;
+    }
+
+    .contact-detail a:hover {
+      color: var(--color-secondary);
+    }
+
+    /* Footer */
+
+    .site-footer {
+      padding-block: 28px;
+      background: var(--color-primary-dark);
+      color: rgba(255,255,255,.55);
+    }
+
+    .footer-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 22px;
+    }
+
+    .footer-inner p {
+      margin: 0;
+      font-size: 9px;
+      line-height: 1.7;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .footer-links a {
+      color: rgba(255,255,255,.75);
+      font-size: 9px;
+    }
+
+    .footer-links a:hover {
+      color: var(--color-secondary);
+    }
+
+    .medical-note {
+      padding-block: 14px;
+      background: #050812;
+      color: rgba(255,255,255,.48);
+      font-size: 9px;
+      line-height: 1.7;
+      text-align: center;
+    }
+
+    /* Mobile conversion bar: exactly two buttons */
+
+    .mobile-cta {
+      position: fixed;
+      z-index: 100;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      display: none;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      padding: 11px 16px calc(11px + env(safe-area-inset-bottom));
+      border-top: 1px solid rgba(11,16,34,.12);
+      background: rgba(255,255,255,.97);
+      box-shadow: 0 -8px 28px rgba(11,16,34,.09);
+      backdrop-filter: blur(12px);
+    }
+
+    .mobile-cta a {
+      display: flex;
+      min-height: 49px;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 9px;
+      border: 1px solid transparent;
+      background: var(--color-primary);
+      color: #FFFFFF;
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: .04em;
+      text-align: center;
+      text-transform: uppercase;
+      transition: background .2s ease, color .2s ease;
+    }
+
+    .mobile-cta a:last-child {
+      border-color: var(--color-primary);
+      background: var(--color-secondary);
+      color: var(--color-primary);
+    }
+
+    .mobile-cta a:hover {
+      background: var(--color-primary-light);
+      color: #FFFFFF;
+    }
+
+    /* Responsive behaviour */
+
+    @media (max-width: 1050px) {
+      .main-nav {
+        gap: 16px;
+      }
+
+      .main-nav a {
+        font-size: 9px;
+      }
+
+      .nav-actions .button {
+        padding-inline: 12px;
+      }
+
+      .hero-inner {
+        gap: 32px;
+      }
+
+      .hero-visual {
+        min-height: 465px;
+      }
+
+      .hero-photo {
+        height: 425px;
+      }
+    }
+
+    @media (max-width: 820px) {
+      :root {
+        --page-gutter: 26px;
+        --section-space: 88px;
+      }
+
+      .topline-inner {
+        justify-content: center;
+      }
+
+      .topline-inner span:first-child {
+        display: none;
+      }
+
+      .nav-wrap {
+        min-height: 76px;
+      }
+
+      .menu-toggle {
+        display: flex;
+      }
+
+      .nav-actions .button {
+        display: none;
+      }
+
+      .main-nav {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        display: none;
+        align-items: stretch;
+        gap: 0;
+        padding: 10px var(--page-gutter) 22px;
+        border-bottom: 1px solid var(--color-border);
+        background: #FFFFFF;
+        box-shadow: 0 20px 30px rgba(11,16,34,.08);
+      }
+
+      .main-nav.is-open {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .main-nav a {
+        padding: 15px 0;
+        border-bottom: 1px solid var(--color-border);
+        font-size: 11px;
+      }
+
+      .hero,
+      .hero-inner {
+        min-height: auto;
+      }
+
+      .hero-inner {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding-block: 72px 50px;
+      }
+
+      .hero-copy {
+        max-width: 670px;
+      }
+
+      .hero h1 {
+        max-width: 650px;
+        font-size: clamp(59px, 11vw, 82px);
+      }
+
+      .hero-visual {
+        width: min(100%, 600px);
+        min-height: 470px;
+        margin-left: auto;
+      }
+
+      .hero-photo {
+        width: 86%;
+        height: 435px;
+      }
+
+      .specialty-intro,
+      .team-heading,
+      .care-icons-header {
+        align-items: start;
+        flex-direction: column;
+      }
+
+      .specialty-intro > p,
+      .team-heading > p,
+      .care-icons-header p {
+        max-width: 550px;
+      }
+
+      .specialty-list {
+        margin-top: 45px;
+      }
+
+      .specialty-row {
+        grid-template-columns: 48px 1fr auto;
+        gap: 16px;
+        padding-block: 24px;
+      }
+
+      .specialty-description {
+        grid-column: 2 / 3;
+        grid-row: 2;
+      }
+
+      .specialty-link {
+        grid-column: 3;
+        grid-row: 1 / 3;
+      }
+
+      .consultation-inner {
+        grid-template-columns: 1fr;
+        gap: 52px;
+      }
+
+      .story-layout {
+        grid-template-columns: 1fr;
+        gap: 55px;
+      }
+
+      .story-visual {
+        width: min(100%, 600px);
+      }
+
+      .story-copy {
+        max-width: 650px;
+      }
+
+      .faq-layout {
+        grid-template-columns: 1fr;
+        gap: 42px;
+      }
+
+      .faq-intro p {
+        max-width: 550px;
+      }
+
+      .contact-inner {
+        grid-template-columns: 1fr;
+        gap: 45px;
+      }
+    }
+
+    @media (max-width: 560px) {
+      :root {
+        --page-gutter: 21px;
+        --section-space: 76px;
+      }
+
+      body {
+        font-size: 15px;
+      }
+
+      .topline {
+        font-size: 9px;
+      }
+
+      .nav-wrap {
+        min-height: 70px;
+      }
+
+      .brand {
+        min-width: 0;
+        gap: 9px;
+      }
+
+      .brand-mark {
+        width: 42px;
+        height: 42px;
+        flex-basis: 42px;
+        font-size: 21px;
+      }
+
+      .brand-copy strong {
+        font-size: 18px;
+      }
+
+      .brand-copy span {
+        font-size: 7px;
+      }
+
+      .hero-inner {
+        padding-top: 57px;
+        padding-bottom: 36px;
+      }
+
+      .hero h1 {
+        font-size: clamp(53px, 14vw, 70px);
+      }
+
+      .hero-description {
+        margin-top: 22px;
+        font-size: 12px;
+      }
+
+      .hero-actions {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 26px;
+      }
+
+      .hero-actions .button {
+        width: 100%;
+      }
+
+      .hero-note {
+        margin-top: 25px;
+        font-size: 9px;
+      }
+
+      .hero-visual {
+        min-height: 360px;
+      }
+
+      .hero-photo {
+        width: 88%;
+        height: 330px;
+        border-radius: 46% 46% 3px 3px;
+      }
+
+      .hero-stamp {
+        right: -4px;
+        bottom: 0;
+        width: 112px;
+        height: 112px;
+      }
+
+      .hero-stamp span {
+        max-width: 76px;
+        font-size: 17px;
+      }
+
+      .hero-caption {
+        bottom: 4px;
+        left: -2px;
+        max-width: 145px;
+        padding: 10px 12px;
+        font-size: 8px;
+      }
+
+      .hero-caption strong {
+        font-size: 9px;
+      }
+
+      .intro-strip-inner {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 12px;
+        padding-block: 22px;
+      }
+
+      .intro-strip p {
+        font-size: 22px;
+      }
+
+      .section-heading {
+        margin-bottom: 36px;
+      }
+
+      .section-heading h2 {
+        font-size: 47px;
+      }
+
+      .section-heading p {
+        margin-top: 17px;
+        font-size: 12px;
+      }
+
+      .specialty-list {
+        margin-top: 35px;
+      }
+
+      .specialty-row {
+        grid-template-columns: 31px 1fr 38px;
+        gap: 11px;
+        min-height: 0;
+        padding-block: 22px;
+      }
+
+      .specialty-number {
+        font-size: 24px;
+      }
+
+      .specialty-title h3 {
+        font-size: 29px;
+      }
+
+      .specialty-title span {
+        font-size: 8px;
+      }
+
+      .specialty-description {
+        font-size: 10px;
+      }
+
+      .specialty-link {
+        width: 37px;
+        height: 37px;
+        font-size: 17px;
+      }
+
+      .care-icons {
+        padding-block: 65px;
+      }
+
+      .care-icons-header h2 {
+        font-size: 39px;
+      }
+
+      .icon-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .icon-item {
+        min-height: 166px;
+        padding: 17px;
+      }
+
+      .icon-art {
+        width: 47px;
+        height: 47px;
+      }
+
+      .icon-art svg {
+        width: 25px;
+        height: 25px;
+      }
+
+      .icon-item h3 {
+        margin-top: 20px;
+        font-size: 22px;
+      }
+
+      .icon-item p {
+        font-size: 9px;
+      }
+
+      .consultation-copy h2,
+      .story-copy h2,
+      .faq-intro h2 {
+        font-size: 48px;
+      }
+
+      .consultation-copy p,
+      .story-copy > p {
+        font-size: 12px;
+      }
+
+      .journey-step {
+        grid-template-columns: 39px 1fr;
+        gap: 12px;
+        padding-block: 20px;
+      }
+
+      .journey-step h3 {
+        font-size: 23px;
+      }
+
+      .journey-step p {
+        font-size: 10px;
+      }
+
+      .story-visual {
+        min-height: 365px;
+      }
+
+      .story-visual img {
+        width: 88%;
+        height: 345px;
+      }
+
+      .story-visual-note {
+        width: 160px;
+        padding: 18px;
+      }
+
+      .story-visual-note strong {
+        font-size: 31px;
+      }
+
+      .story-points {
+        gap: 15px;
+      }
+
+      .story-point strong {
+        font-size: 19px;
+      }
+
+      .team-list {
+        grid-template-columns: 1fr;
+        margin-top: 35px;
+      }
+
+      .team-member {
+        padding-block: 19px;
+      }
+
+      .team-member h3 {
+        font-size: 25px;
+      }
+
+      .faq-list summary {
+        font-size: 21px;
+      }
+
+      .faq-list details p {
+        font-size: 11px;
+      }
+
+      .contact-copy h2 {
+        font-size: 56px;
+      }
+
+      .contact-copy p {
+        font-size: 12px;
+      }
+
+      .contact-actions {
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+
+      .contact-actions .button {
+        width: 100%;
+      }
+
+      .footer-inner {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .mobile-cta {
+        display: grid;
+      }
+
+      body {
+        padding-bottom: calc(71px + env(safe-area-inset-bottom));
+      }
+
+      .site-footer {
+        padding-bottom: 25px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        scroll-behavior: auto !important;
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: .01ms !important;
+      }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalClinic",
+    "name": "Amir Beladi Polyclinic",
+    "url": "https://amirbeladipolyclinic.com/",
+    "telephone": "+971548881488",
+    "email": "info@amirbeladipolyclinic.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "351 Al Wasl Road, Al Bada'a",
+      "addressLocality": "Dubai",
+      "addressCountry": "AE"
+    },
+    "openingHours": [
+      "Mo-Su 10:30-20:00"
+    ],
+    "medicalSpecialty": [
+      "Dentistry",
+      "Dermatology",
+      "Aesthetic Medicine"
+    ],
+    "sameAs": [
+      "https://ae.linkedin.com/company/amir-beladi-polyclinic",
+      "https://linktr.ee/AmirBeladiPolyClinic"
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <div class="topline">
+    <div class="container topline-inner">
+      <span>Patient-focused dental, aesthetic and wellness care</span>
+      <span>Al Wasl Road, Dubai &nbsp;·&nbsp; <a href="tel:+971548881488">+971 54 888 1488</a></span>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home" aria-label="Amir Beladi Polyclinic home">
+        <span class="brand-mark" aria-hidden="true">AB</span>
+        <span class="brand-copy">
+          <strong>Amir Beladi</strong>
+          <span>Polyclinic · Dubai</span>
+        </span>
+      </a>
+
+      <nav class="main-nav" id="main-navigation" aria-label="Main navigation">
+        <a href="#care">Our Care</a>
+        <a href="#approach">Your Visit</a>
+        <a href="#clinic">About Us</a>
+        <a href="#team">Our Team</a>
+        <a href="#faq">FAQs</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a class="button button-primary" href="https://amirbeladipolyclinic.com/contact-us/">
+          Book an Appointment <span class="button-arrow" aria-hidden="true">↗</span>
+        </a>
+        <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="main-navigation">
+          <span aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow">Amir Beladi Polyclinic · Dubai</p>
+          <h1>Advanced care.<br>A more <em>confident</em> you.</h1>
+          <p class="hero-description">
+            Discover dental, dermatology, aesthetic and wellness care at Amir Beladi Polyclinic. Start with your concern, meet the right care team and explore a next step shaped around your individual needs.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" style="background:var(--color-secondary);color:var(--color-primary)" href="https://amirbeladipolyclinic.com/contact-us/">
+              Book an Appointment <span class="button-arrow" aria-hidden="true">↗</span>
+            </a>
+            <a class="button button-light" href="https://wa.me/971548881488?text=Hello%2C%20I%20would%20like%20to%20ask%20about%20a%20consultation%20at%20Amir%20Beladi%20Polyclinic.">
+              WhatsApp the Clinic
+            </a>
+          </div>
+          <div class="hero-note">Dental · Skin & Aesthetics · Hair · Wellness</div>
+        </div>
+
+        <div class="hero-visual" aria-label="Illustrative clinical care photograph">
+          <div class="hero-photo">
+            <img
+              src="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=1100&q=85"
+              alt="Dental professional providing patient care in a modern clinical setting"
+              fetchpriority="high"
+              width="1100"
+              height="1300">
+          </div>
+          <div class="hero-stamp" aria-hidden="true">
+            <span>Care shaped around you</span>
+          </div>
+          <div class="hero-caption">
+            <strong>One coordinated clinic</strong>
+            A considered starting point for your care
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="intro-strip" aria-label="Clinic introduction">
+      <div class="container intro-strip-inner">
+        <p>Different needs. A clearer way to find your next step.</p>
+        <a href="#care">Explore our care pathways <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+
+    <section class="specialties" id="care">
+      <div class="container">
+        <div class="specialty-intro">
+          <div class="section-heading">
+            <p class="eyebrow">Explore your options</p>
+            <h2>Care that starts<br>with what matters to you.</h2>
+            <p>
+              Whether you are considering a dental treatment, skin consultation or wellness service, begin with the area you would like to discuss. The clinic team can help direct your enquiry.
+            </p>
+          </div>
+          <p>Four clear pathways make it easier to explore the clinic's main areas of care.</p>
+        </div>
+
+        <div class="specialty-list">
+          <a class="specialty-row" href="https://amirbeladipolyclinic.com/our-services/">
+            <span class="specialty-number">01</span>
+            <div class="specialty-title">
+              <h3>Dental & Smile Care</h3>
+              <span>Diagnosis · Restoration · Smile design</span>
+            </div>
+            <p class="specialty-description">
+              Explore dental imaging, implants, crowns, bridges, veneers, whitening, fillings, cleaning, braces and clear aligners.
+            </p>
+            <span class="specialty-link" aria-hidden="true">↗</span>
+          </a>
+
+          <a class="specialty-row" href="https://amirbeladipolyclinic.com/our-services/">
+            <span class="specialty-number">02</span>
+            <div class="specialty-title">
+              <h3>Skin & Aesthetics</h3>
+              <span>Skin quality · Rejuvenation · Aesthetic care</span>
+            </div>
+            <p class="specialty-description">
+              Discuss options such as HydraFacial, microneedling, skin rejuvenation, fillers, Botox, mesotherapy and other aesthetic services.
+            </p>
+            <span class="specialty-link" aria-hidden="true">↗</span>
+          </a>
+
+          <a class="specialty-row" href="https://amirbeladipolyclinic.com/our-services/">
+            <span class="specialty-number">03</span>
+            <div class="specialty-title">
+              <h3>Hair & Scalp</h3>
+              <span>Hair restoration · Scalp assessment</span>
+            </div>
+            <p class="specialty-description">
+              Find out more about hair restoration services and scalp-related support, with suitability discussed as part of a clinical assessment.
+            </p>
+            <span class="specialty-link" aria-hidden="true">↗</span>
+          </a>
+
+          <a class="specialty-row" href="https://amirbeladipolyclinic.com/our-services/">
+            <span class="specialty-number">04</span>
+            <div class="specialty-title">
+              <h3>Wellness & Diagnostics</h3>
+              <span>IV therapy · Laboratory testing</span>
+            </div>
+            <p class="specialty-description">
+              Explore available IV therapy options and laboratory screening packages, and ask which services may be appropriate for your needs.
+            </p>
+            <span class="specialty-link" aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="care-icons" aria-labelledby="care-options-heading">
+      <div class="container">
+        <div class="care-icons-header">
+          <h2 id="care-options-heading">A closer look at the care available.</h2>
+          <p>Explore selected services offered by the clinic. Treatment suitability is determined through an individual clinical assessment.</p>
+        </div>
+
+        <!-- Exactly six custom SVG icons, arranged in two rows of three. -->
+        <div class="icon-grid">
+          <article class="icon-item">
+            <div class="icon-art">
+              <svg viewBox="0 0 32 32" role="img" aria-label="Dental implant icon">
+                <path d="M16 4.5c-4.8-2.2-10.2.8-10.2 6.3 0 4.1 2.1 6.3 3.2 10.3.7 2.7 1.3 6.2 3.2 6.2 1.7 0 1.6-5.1 3.8-5.1s2.1 5.1 3.8 5.1c1.9 0 2.5-3.5 3.2-6.2 1.1-4 3.2-6.2 3.2-10.3 0-5.5-5.4-8.5-10.2-6.3Z"/>
+                <path d="M16 3v8m-3-3h6m-3 8v6"/>
+              </svg>
+            </div>
+            <div>
+              <h3>Dental Implants</h3>
+              <p>Tooth replacement options and restorative planning.</p>
+            </div>
+          </article>
+
+          <article class="icon-item">
+            <div class="icon-art">
+              <svg viewBox="0 0 32 32" role="img" aria-label="Orthodontic care icon">
+                <path d="M5 10.5c3.4-2.3 6.8-3.4 11-3.4s7.6 1.1 11 3.4v8.2c-3.4 2.3-6.8 3.4-11 3.4s-7.6-1.1-11-3.4v-8.2Z"/>
+                <path d="M10 9.1v10.8m6-12.8v14.8m6-12.8v10.8M5 14.5h22"/>
+              </svg>
+            </div>
+            <div>
+              <h3>Braces & Aligners</h3>
+              <p>Orthodontic assessment and teeth-straightening options.</p>
+            </div>
+          </article>
+
+          <article class="icon-item">
+            <div class="icon-art">
+              <svg viewBox="0 0 32 32" role="img" aria-label="Skin aesthetics icon">
+                <path d="M16 4.5c-4.4 5.4-9.2 10.1-9.2 15.1a9.2 9.2 0 0 0 18.4 0C25.2 14.6 20.4 9.9 16 4.5Z"/>
+                <path d="M11.5 20.5c.5 2.2 2.1 3.5 4.5 3.7m4.4-11.1 1.1-2.1m-8.8 0 1.1 2.1"/>
+              </svg>
+            </div>
+            <div>
+              <h3>Skin Treatments</h3>
+              <p>Skin-quality consultations and aesthetic treatment options.</p>
+            </div>
+          </article>
+
+          <article class="icon-item">
+            <div class="icon-art">
+              <svg viewBox="0 0 32 32" role="img" aria-label="Hair and scalp care icon">
+                <path d="M16 26.5c-5.2 0-8.8-3.6-8.8-8.6 0-4.5 2.4-7.1 4.5-10.3M16 26.5c5.2 0 8.8-3.6 8.8-8.6 0-4.5-2.4-7.1-4.5-10.3"/>
+                <path d="M11.5 9.5c1.2-2.5 2.8-4 4.5-4s3.3 1.5 4.5 4M12 15.5c1.2-1.3 2.5-1.9 4-1.9s2.8.6 4 1.9M12.5 21c1.1.8 2.3 1.2 3.5 1.2s2.4-.4 3.5-1.2"/>
+              </svg>
+            </div>
+            <div>
+              <h3>Hair Restoration</h3>
+              <p>Hair and scalp concerns discussed with the care team.</p>
+            </div>
+          </article>
+
+          <article class="icon-item">
+            <div class="icon-art">
+              <svg viewBox="0 0 32 32" role="img" aria-label="IV therapy icon">
+                <path d="M11 4.5h10m-8 0v5.2l-3.3 4.2v11.2c0 1.2.9 2.1 2.1 2.1h6.4c1.2 0 2.1-.9 2.1-2.1V13.9L18 9.7V4.5"/>
+                <path d="M9.7 17.5h12.6m-6.3-3.1v6.2m-3.1-3.1h6.2"/>
+              </svg>
+            </div>
+            <div>
+              <h3>IV Therapy</h3>
+              <p>Ask about available IV therapy services and suitability.</p>
+            </div>
+          </article>
+
+          <article class="icon-item">
+            <div class="icon-art">
+              <svg viewBox="0 0 32 32" role="img" aria-label="Laboratory diagnostics icon">
+                <path d="M12 4.5h8m-6 0v8.1l-6.3 11.1c-.9 1.6.2 3.6 2.1 3.6h12.4c1.9 0 3-2 2.1-3.6L18 12.6V4.5"/>
+                <path d="M10.5 20h11m-8-4.5h5"/>
+                <circle cx="14" cy="23.5" r=".8" fill="currentColor" stroke="none"/>
+                <circle cx="19" cy="24.5" r=".8" fill="currentColor" stroke="none"/>
+              </svg>
+            </div>
+            <div>
+              <h3>Lab Screening</h3>
+              <p>Laboratory packages and health-screening enquiries.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="consultation" id="approach">
+      <div class="container consultation-inner">
+        <div class="consultation-copy">
+          <p class="eyebrow">A consultation-led approach</p>
+          <h2>Know your options before you decide.</h2>
+          <p>
+            You do not need to know the name of a treatment before contacting the clinic. Start by explaining your concern. The team can help identify the relevant service and appointment type, while a clinician reviews suitability and discusses appropriate next steps.
+          </p>
+          <a class="button button-light" href="https://wa.me/971548881488?text=Hello%2C%20I%20would%20like%20guidance%20on%20which%20consultation%20to%20book.">
+            Ask Which Consultation to Book <span class="button-arrow" aria-hidden="true">↗</span>
+          </a>
+        </div>
+
+        <div class="journey" aria-label="How to begin your visit">
+          <article class="journey-step">
+            <span>01</span>
+            <div>
+              <h3>Tell us what you need</h3>
+              <p>Share your main concern or the service you are considering by phone or WhatsApp.</p>
+            </div>
+          </article>
+          <article class="journey-step">
+            <span>02</span>
+            <div>
+              <h3>Find the right service</h3>
+              <p>The clinic team can help direct your enquiry to the relevant specialty and appointment type.</p>
+            </div>
+          </article>
+          <article class="journey-step">
+            <span>03</span>
+            <div>
+              <h3>Discuss suitability</h3>
+              <p>A clinician can review your needs, relevant health information and treatment considerations.</p>
+            </div>
+          </article>
+          <article class="journey-step">
+            <span>04</span>
+            <div>
+              <h3>Understand your next step</h3>
+              <p>Discuss suitable options, practical details and how to proceed with your care.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="clinic-story" id="clinic">
+      <div class="container story-layout">
+        <div class="story-visual">
+          <img
+            src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1000&q=85"
+            alt="Illustrative image of a contemporary dental clinic interior"
+            loading="lazy"
+            width="1000"
+            height="1100">
+          <div class="story-visual-note">
+            <strong>12+ years</strong>
+            <span>Medical experience stated by the clinic</span>
+          </div>
+        </div>
+
+        <div class="story-copy">
+          <p class="eyebrow">About the clinic</p>
+          <h2>Different specialties. A patient-focused approach.</h2>
+          <p>
+            Amir Beladi Polyclinic brings dental, aesthetic and related wellness services together at its Al Wasl Road location in Dubai. The clinic describes its approach as personalised, with care guided by the needs and goals discussed during consultation.
+          </p>
+          <p>
+            Its published services include dental diagnostics and restorative care, orthodontics, skin and aesthetic treatments, hair services, IV therapy and laboratory packages.
+          </p>
+
+          <div class="story-points">
+            <div class="story-point">
+              <strong>Dubai</strong>
+              <span>351 Al Wasl Road, Al Bada'a</span>
+            </div>
+            <div class="story-point">
+              <strong>Daily</strong>
+              <span>Open 10:30 AM – 8:00 PM</span>
+            </div>
+            <div class="story-point">
+              <strong>Dental</strong>
+              <span>Specialist orthodontic care and dental services</span>
+            </div>
+            <div class="story-point">
+              <strong>Aesthetics</strong>
+              <span>Skin and aesthetic treatment options</span>
+            </div>
+          </div>
+
+          <a class="button button-outline" href="https://amirbeladipolyclinic.com/about-us/">
+            Learn About the Clinic <span class="button-arrow" aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="team" id="team">
+      <div class="container">
+        <div class="team-heading">
+          <div class="section-heading">
+            <p class="eyebrow">Meet the care team</p>
+            <h2>People behind your care.</h2>
+            <p>
+              Get to know some of the clinicians and team members publicly listed by Amir Beladi Polyclinic.
+            </p>
+          </div>
+          <p>Explore the clinic's team information and ask which clinician is appropriate for your enquiry.</p>
+        </div>
+
+        <div class="team-list">
+          <article class="team-member">
+            <div>
+              <h3>Dr. Amir Beladi</h3>
+              <p>Specialist Orthodontist & Dentofacial Orthopedics</p>
+            </div>
+            <a href="https://amirbeladipolyclinic.com/teams/amir-beladi/" aria-label="View Dr. Amir Beladi's profile">↗</a>
+          </article>
+
+          <article class="team-member">
+            <div>
+              <h3>Dr. Yasaman Omrani</h3>
+              <p>Aesthetic Dentist / Implantologist</p>
+            </div>
+            <a href="https://amirbeladipolyclinic.com/our-team/" aria-label="View the clinic team">↗</a>
+          </article>
+
+          <article class="team-member">
+            <div>
+              <h3>Dr. Alieh Behjat</h3>
+              <p>General Practitioner</p>
+            </div>
+            <a href="https://amirbeladipolyclinic.com/our-team/" aria-label="View the clinic team">↗</a>
+          </article>
+
+          <article class="team-member">
+            <div>
+              <h3>Diana Kaw</h3>
+              <p>Head Nurse</p>
+            </div>
+            <a href="https://amirbeladipolyclinic.com/our-team/" aria-label="View the clinic team">↗</a>
+          </article>
+        </div>
+
+        <p style="margin:24px 0 0;color:var(--color-text-muted);font-size:10px;line-height:1.8">
+          Team roles are shown as published by the clinic. Please visit the official team page for the current team listing.
+        </p>
+      </div>
+    </section>
+
+    <section class="faq" id="faq">
+      <div class="container faq-layout">
+        <div class="faq-intro">
+          <p class="eyebrow">Helpful information</p>
+          <h2>Before you get in touch.</h2>
+          <p>Some useful starting points for visitors exploring the clinic's services and planning an appointment.</p>
+        </div>
+
+        <div class="faq-list">
+          <details>
+            <summary>Which service should I ask about?</summary>
+            <p>
+              You can contact the clinic with your main concern rather than choosing a treatment name first. The team can help direct your enquiry to dental care, skin and aesthetics, hair services or wellness and diagnostics.
+            </p>
+          </details>
+
+          <details>
+            <summary>Do I need a consultation before treatment?</summary>
+            <p>
+              Suitability depends on the service and your individual circumstances. Clinical and aesthetic options should be discussed with an appropriate clinician before a treatment decision is made.
+            </p>
+          </details>
+
+          <details>
+            <summary>Where is Amir Beladi Polyclinic located?</summary>
+            <p>
+              The clinic is located at 351 Al Wasl Road, Al Bada'a, Dubai, United Arab Emirates.
+            </p>
+          </details>
+
+          <details>
+            <summary>What are the clinic's opening hours?</summary>
+            <p>
+              The clinic's published contact information lists its working hours as every day from 10:30 AM to 8:00 PM. Contact the clinic directly to confirm appointment availability.
+            </p>
+          </details>
+
+          <details>
+            <summary>How can I arrange an appointment?</summary>
+            <p>
+              You can call or WhatsApp the clinic on +971 54 888 1488, or use the official contact page to make an appointment enquiry.
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="container contact-inner">
+        <div class="contact-copy">
+          <p class="eyebrow">Your next step</p>
+          <h2>Let's start with a conversation.</h2>
+          <p>
+            Tell the team what you would like help with. They can guide your enquiry towards the appropriate service and explain how to arrange a consultation.
+          </p>
+          <div class="contact-actions">
+            <a class="button button-primary" style="background:var(--color-secondary);color:var(--color-primary)" href="https://amirbeladipolyclinic.com/contact-us/">
+              Book an Appointment <span class="button-arrow" aria-hidden="true">↗</span>
+            </a>
+            <a class="button button-light" href="https://wa.me/971548881488?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20services%20at%20Amir%20Beladi%20Polyclinic.">
+              WhatsApp the Clinic
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-details">
+          <div class="contact-detail">
+            <span>Visit us</span>
+            <strong>351 Al Wasl Road, Al Bada'a,<br>Dubai, United Arab Emirates</strong>
+          </div>
+          <div class="contact-detail">
+            <span>Call or WhatsApp</span>
+            <a href="tel:+971548881488">+971 54 888 1488</a>
+          </div>
+          <div class="contact-detail">
+            <span>Email</span>
+            <a href="mailto:info@amirbeladipolyclinic.com">info@amirbeladipolyclinic.com</a>
+          </div>
+          <div class="contact-detail">
+            <span>Working hours</span>
+            <strong>Every day · 10:30 AM – 8:00 PM</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="current-year">2026</span> Amir Beladi Polyclinic. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="https://amirbeladipolyclinic.com/">Official Website</a>
+        <a href="https://amirbeladipolyclinic.com/our-services/">Services</a>
+        <a href="https://amirbeladipolyclinic.com/our-team/">Our Team</a>
+        <a href="https://amirbeladipolyclinic.com/contact-us/">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="medical-note">
+    Website information is for general guidance only and is not a substitute for medical advice, diagnosis or treatment. Suitability and treatment plans should be discussed with a qualified clinician.
+  </div>
+
+  <!-- Exactly two persistent mobile CTA buttons -->
+  <div class="mobile-cta" aria-label="Quick contact options">
+    <a href="https://wa.me/971548881488?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20a%20consultation.">WhatsApp Us</a>
+    <a href="https://amirbeladipolyclinic.com/contact-us/">Book Appointment</a>
+  </div>
+
+  <script>
+    (function () {
+      const menuButton = document.querySelector(".menu-toggle");
+      const navigation = document.querySelector(".main-nav");
+      const body = document.body;
+
+      if (menuButton && navigation) {
+        menuButton.addEventListener("click", function () {
+          const isExpanded = menuButton.getAttribute("aria-expanded") === "true";
+          menuButton.setAttribute("aria-expanded", String(!isExpanded));
+          menuButton.setAttribute("aria-label", isExpanded ? "Open navigation" : "Close navigation");
+          navigation.classList.toggle("is-open", !isExpanded);
+          body.classList.toggle("menu-open", !isExpanded);
+        });
+
+        navigation.querySelectorAll("a").forEach(function (link) {
+          link.addEventListener("click", function () {
+            menuButton.setAttribute("aria-expanded", "false");
+            menuButton.setAttribute("aria-label", "Open navigation");
+            navigation.classList.remove("is-open");
+            body.classList.remove("menu-open");
+          });
+        });
+
+        document.addEventListener("keydown", function (event) {
+          if (event.key === "Escape") {
+            menuButton.setAttribute("aria-expanded", "false");
+            menuButton.setAttribute("aria-label", "Open navigation");
+            navigation.classList.remove("is-open");
+            body.classList.remove("menu-open");
+            menuButton.focus();
+          }
+        });
+      }
+
+      const year = document.getElementById("current-year");
+      if (year) {
+        year.textContent = new Date().getFullYear();
+      }
+    })();
+  </script>
+</body>
+</html>
